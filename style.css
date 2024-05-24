@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+article {
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+}
+
+.imagen-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.imagen-container:hover img {
+    transform: scale(1.1);
+}
+
+.article-content {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: #fff;
+}
+
+.article-content h2 {
+    margin-bottom: 5px;
+}
+
+.article-content p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    margin-top: 20px; /* Añadir un margen superior */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 70%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #4CAF50; /* Cambiar el color del borde al enfocar */
+}
+
+#searchInput::placeholder {
+    color: #999; /* Color del texto de marcador de posición */
+}
+
+#searchInput + button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#searchInput + button:hover {
+    background-color: #45a049; /* Cambiar el color al pasar el mouse */
+}
